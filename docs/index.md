@@ -11,7 +11,7 @@ Ce vault (`docs/`) compile la recherche : cadrage, notes de lecture, pages
 concepts, journal.
 
 ## Cadrage et recherche
-- [[axes-de-recherche]] — 🟡 proposition des 8 axes de recherche, hypothèses de départ, lectures prioritaires, questions ouvertes.
+- [[axes-de-recherche]] — 8 axes de recherche, hypothèses de départ, lectures prioritaires ; cadrage validé le 2026-09-19 (7–12 ans, produit, parents joueurs, tablette).
 
 ## Lectures
 _(aucune note de lecture pour l'instant — déposer les PDF dans `lectures/` puis ingérer)_

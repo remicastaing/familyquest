@@ -2,7 +2,7 @@
 type: recherche
 titre: Axes de recherche — gamification de la vie familiale
 cree_le: 2026-09-19
-statut: 🟡 BROUILLON — à valider
+statut: cadrage validé, axes 🟡 à confirmer par les lectures
 tags: [recherche, gamification, famille, motivation, cadrage]
 ---
 
@@ -19,7 +19,11 @@ tags: [recherche, gamification, famille, motivation, cadrage]
 famille, qui utilise les mécanismes de la gamification pour inciter les enfants
 à participer activement et positivement à la vie familiale.
 
-**Ce que « participer à la vie familiale » recouvre** (à préciser avec Rémi) :
+**Cible** : enfants de 7 à 12 ans, produit destiné à d'autres familles, parents
+joueurs, support tablette familiale / app parent (tableau physique à QR code en
+second temps). Détail dans la section « Décisions de cadrage ».
+
+**Ce que « participer à la vie familiale » recouvre** (périmètre : tout) :
 - les contributions domestiques (tâches, rangement, repas) ;
 - l'entraide et la coopération entre membres (fratrie, parents) ;
 - les rituels et moments partagés (repas, jeux, sorties, réunions de famille) ;
@@ -88,8 +92,11 @@ mécaniques. Sans lui, on empile des points et des badges à l'aveugle.
 **Théories complémentaires à mobiliser ponctuellement**
 - Fixation d'objectifs (Locke & Latham) : objectifs précis, difficiles mais
   atteignables, avec feedback → pertinent pour les « quêtes ».
-- Auto-efficacité (Bandura) et état d'esprit de développement (Dweck) :
-  progression visible, erreurs non punitives.
+- Bandura : auto-efficacité, et surtout **apprentissage social par modelage**
+  — pilier à part entière puisque les parents jouent pour montrer l'exemple
+  ([[Apprentissage social]]).
+- État d'esprit de développement (Dweck) : progression visible, erreurs non
+  punitives.
 - Flow (Csikszentmihalyi) : équilibre défi/compétence, adaptation par âge.
 - Modèle attente-valeur (Eccles & Wigfield) : pourquoi un enfant juge qu'une
   tâche « vaut le coup ».
@@ -154,15 +161,18 @@ C'est l'axe qui différencie ce projet d'une énième app de « chores » : la
 cible est un enfant en développement, dans une relation d'attachement.
 
 **Développement et âge** — [[Développement de l'enfant]]
-- Erikson : industrie vs infériorité (6–12 ans), identité (adolescence) → les
-  besoins ne sont pas les mêmes à 6 et à 14 ans.
+- Cible 7–12 ans : Erikson, industrie vs infériorité (besoin de se sentir
+  capable et utile) ; Piaget, opérations concrètes (règles, comptage, équité
+  arithmétique). Les besoins d'un enfant de 7 ans et d'un enfant de 12 ans
+  diffèrent déjà beaucoup : prévoir une adaptation intra-tranche.
 - Fonctions exécutives et autorégulation (Diamond 2013) : capacité à différer
   une récompense, à comprendre un système de points, à planifier.
 - Sens de l'équité : Fehr, Bernhard & Rockenbach (2008), Blake & McAuliffe
   (2011) — l'aversion à l'inéquité apparaît tôt et évolue ; déterminant pour
   la fratrie.
-- Adolescence : besoin accru d'autonomie, rejet du contrôle, importance des
-  pairs → une app conçue pour des 7 ans sera rejetée par un 14 ans.
+- Pré-adolescence (11–12) : montée du besoin d'autonomie et du poids des pairs
+  → le haut de la tranche est le plus fragile face à un système perçu comme
+  contrôlant ou « bébé ».
 
 **Styles parentaux et soutien à l'autonomie** — [[Parentalité soutenant l'autonomie]]
 - Baumrind / Maccoby & Martin : style autoritatif (exigeant et chaleureux).
@@ -226,6 +236,13 @@ du passage : jeu → habitude → valeur intégrée.
 Chaque mécanique donnera une fiche `concepts/` avec : preuves, risques,
 conditions d'usage, transposabilité famille, verdict SDT.
 
+Le périmètre étant « tout », il faut d'abord une **typologie des comportements
+visés**, car une mécanique adaptée à l'un ne l'est pas à l'autre :
+routine individuelle (hygiène, devoirs, coucher), contribution au collectif
+(tâches, repas), comportement prosocial (entraide, partage), participation aux
+rituels (repas, réunion de famille, sortie), régulation (écrans, conflits).
+Le catalogue croisera mécaniques × types de comportement.
+
 | Mécanique | Question centrale | Ancrages |
 |---|---|---|
 | Points, XP, niveaux | progression visible sans transactionnaliser ? | Mekler 2017, Sailer 2017 |
@@ -257,6 +274,11 @@ conditions d'usage, transposabilité famille, verdict SDT.
   - surveillance et contrôle parental : la « famille quantifiée » ;
   - transactionnalisation des relations (Sandel, *What Money Can't Buy* :
     l'effet d'éviction des normes sociales par les normes marchandes).
+- **Conception tangible et *phygital*** (second temps) — [[Interface tangible]] :
+  tableau physique de saisie avec post-it à QR code, littérature sur les
+  interfaces tangibles pour enfants (Zuckerman, Antle) et sur les dispositifs
+  domestiques partagés ; question de la synchronisation entre le tableau et
+  l'app, et de ce que le geste physique apporte au rituel.
 - **Risques d'usage** : triche et « gaming the system », abandon après
   nouveauté, charge administrative pour le parent (cause n°1 d'abandon des
   apps de chores selon les avis utilisateurs — TODO à vérifier), incohérence
@@ -274,8 +296,11 @@ utilisateurs.
   TDAH, animal virtuel nourri par les tâches, framing clinique), OurHome,
   S'moresUp, Homey, ChoreMonster (disparu — pourquoi ?), Greenlight / GoHenry /
   BusyKid (argent de poche), Cozi / FamilyWall (organisation sans jeu).
-- Aussi les solutions **non numériques** : tableaux de récompenses, systèmes de
-  jetons, réunions de famille, « contrats ».
+- Aussi les solutions **non numériques et hybrides** : tableaux de récompenses,
+  tableaux magnétiques de routines, systèmes de jetons, réunions de famille,
+  « contrats » ; et les objets connectés domestiques destinés aux enfants.
+- Étudier spécifiquement **pourquoi les apps de chores perdent leurs
+  utilisateurs** (avis, retours d'expérience, produits disparus).
 
 ---
 
@@ -303,9 +328,10 @@ testables.
   individuel est à proscrire ou à encadrer fortement.
 - **H3** — La couche narrative et ludique (ludicisation) compte davantage que
   l'économie de points (thèse Sanchez appliquée à la famille).
-- **H4** — Le parent doit être lui aussi joueur, soumis à des règles visibles,
-  sinon l'app devient un outil de contrôle et sera rejetée (surtout par les
-  ados).
+- **H4** — (décision de conception, voir cadrage) Un parent qui joue, soumis
+  à des règles visibles, sert de modèle et évite que l'app devienne un outil
+  de contrôle. Hypothèse dérivée : la crédibilité du modèle dépend de la
+  symétrie perçue par l'enfant (le parent peut aussi perdre).
 - **H5** — Le système doit être conçu pour s'effacer : fading explicite,
   transfert vers des rituels hors écran.
 - **H6** — Les récompenses relationnelles (temps partagé, privilèges choisis
@@ -337,15 +363,33 @@ testables.
 
 ---
 
-## Questions ouvertes pour Rémi
+## Décisions de cadrage (validées par Rémi le 2026-09-19)
 
-Elles orientent fortement la suite ; à trancher avant la phase 1.
-- **Âge des enfants cibles** : 4–8, 8–12, ados ? Plusieurs tranches en même
-  temps ?
-- **Usage** : outil pour ta propre famille d'abord, ou produit destiné à
-  d'autres familles ?
-- **Périmètre de « vie familiale »** : tâches seulement, ou aussi rituels,
-  entraide, régulation des écrans, devoirs ?
-- **Rôle envisagé pour les parents** : maître du jeu uniquement, ou joueurs ?
-- **Support** : app mobile enfant, écran partagé (tablette familiale), ou
-  support physique augmenté (tableau + app parent) ?
+| Question | Décision | Conséquence sur la recherche |
+|---|---|---|
+| Âge cible | **7–12 ans** | Une seule fenêtre développementale (Erikson : industrie vs infériorité ; Piaget : opérations concrètes). Les ados sortent du périmètre, mais la fratrie peut contenir un enfant hors tranche : à traiter comme cas limite, pas comme cible. |
+| Usage | **Produit pour d'autres familles** | Co-conception avec plusieurs familles obligatoire (axe 6), variabilité des styles parentaux (axe 3), conformité RGPD / code de conception pour mineurs dès le départ, onboarding et charge administrative parent comme critères de conception. |
+| Périmètre | **Tout** : tâches, rituels, entraide, autonomie, écrans, devoirs, conflits | Le catalogue de mécaniques (axe 5) doit couvrir des comportements de nature différente ; une même mécanique ne conviendra pas à « ranger sa chambre » et à « aider son frère ». Prévoir une typologie des comportements visés. |
+| Rôle des parents | **Joueurs eux aussi, à titre de modèle** | H4 devient une décision de conception ; la recherche porte sur le *comment* : apprentissage par observation (Bandura), symétrie des règles, ce que le parent gagne ou perd, et comment il reste arbitre tout en jouant (double rôle à instruire via Sanchez 2017 et la SDT parentale). |
+| Support | **Tablette familiale ou app parent** ; tableau physique en second temps | Phase 1 : écran partagé dans un lieu commun (cuisine) plutôt qu'écran individuel enfant → réduit le paradoxe temps d'écran et favorise le rituel collectif. Phase 2 : tableau physique comme outil de saisie avec post-it à QR code → à documenter dans l'axe 6 (interaction tangible, *phygital*). |
+
+### Ce que ces décisions changent dans les axes
+
+- **Axe 1** : ajouter Bandura (apprentissage social, modelage) comme pilier à part
+  entière puisque le parent joue pour montrer l'exemple.
+- **Axe 3** : concentrer la revue développementale sur 7–12 ans (compréhension
+  des systèmes de points, différé de récompense, équité, comparaison sociale
+  qui s'intensifie vers 9–10 ans).
+- **Axe 5** : ajouter une typologie des comportements visés (routine
+  individuelle, contribution au collectif, comportement prosocial, régulation
+  d'un conflit ou d'un écran) et croiser mécaniques × types de comportement.
+- **Axe 6** : ajouter la conception tangible et *phygital* (tableau, post-it à
+  QR code, objets connectés en cuisine) comme sous-axe de second temps, avec
+  la littérature sur les interfaces tangibles pour enfants (Zuckerman,
+  Antle) et sur les dispositifs domestiques partagés.
+- **Axe 7** : ajouter au benchmark les tableaux physiques et les produits
+  hybrides (tableaux magnétiques de routines, Tonies-like) et étudier pourquoi
+  les apps de chores perdent leurs utilisateurs.
+- **Axe 8** : l'évaluation se fera avec des familles tierces → protocole de
+  recrutement, consentement des enfants, mesures compatibles avec 7–12 ans
+  (versions enfant des échelles).
